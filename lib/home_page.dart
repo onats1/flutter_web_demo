@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_demo/coursedetails/course_details.dart';
 import 'package:flutter_web_demo/navigation/navigation_bar.dart';
+import 'package:flutter_web_demo/widget/call_to_action.dart';
 import 'package:flutter_web_demo/widget/centered_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,8 +16,10 @@ class HomePage extends StatelessWidget {
               children: [
                 NavigationBar(),
                 Expanded(child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CourseDetails()
+                    CourseDetails(),
+                    CallToAction("Join Course.")
                   ],
                 ))
               ],
